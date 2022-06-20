@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene version="0.6.0">
+	<integrator type="path" />
+	<shape type="obj">
+		<string name="filename" value="$mesh" />
+		<bsdf type="roughplastic">
+			<string name="distribution" value="ggx" />
+			<texture type="bitmap" name="diffuseReflectance">
+				<string name="filename" value="$d_albedo" />
+			</texture>
+			<texture type="bitmap" name="specularReflectance">
+				<string name="filename" value="$s_albedo" />
+			</texture>
+			<texture type="bitmap" name="alpha">
+				<string name="filename" value="$s_roughness" />
+			</texture>
+		</bsdf>
+	</shape>
+	<sensor type="perspective" id="Camera-camera">
+		<float name="fov" value="$fov" />
+		<transform name="toWorld">
+			<matrix value="$c2w" />
+		</transform>
+		<sampler type="ldsampler">
+			<integer name="sampleCount" value="512" />
+		</sampler>
+		<film type="hdrfilm" id="film">
+			<integer name="width" value="$width" />
+			<integer name="height" value="$height" />
+			<string name="pixelFormat" value="rgb" />
+			<boolean name="banner" value="false" />
+			<rfilter type="gaussian" />
+		</film>
+	</sensor>
+	<emitter type="envmap">
+		<!--
+		<transform name="toWorld" >
+		<matrix value="0.720696 0 -0.693251 0 0 1 0 0 0.693251 0 0.720696 0 0 0 0 1"/>
+		</transform>
+		-->
+		<string name="filename" value="$envmap" />
+	</emitter>
+</scene>
