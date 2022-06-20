@@ -1,5 +1,7 @@
 # IRON: Inverse Rendering by Optimizing Neural SDFs and Materials from Photometric Images
 
+Note: this repo is still under construction. 
+
 Project page: <https://kai-46.github.io/IRON-website/>
 
 ![example results](./readme_resources/inputs_outputs.png)
