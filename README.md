@@ -43,3 +43,7 @@ Once training is done, you will see the recovered mesh and materials under the f
 https://user-images.githubusercontent.com/21653654/174612222-91302de2-34f2-429c-b53e-f78f140873c4.mp4
 
 ![example results](./readme_resources/assets_lowres.png)
+
+## Acknowledgements
+We would like to thank the authors of [IDR](https://github.com/lioryariv/idr) and [NeuS](https://github.com/Totoro97/NeuS) for open-sourcing their projects.
+
