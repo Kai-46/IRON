@@ -4,10 +4,6 @@ Project page: <https://kai-46.github.io/IRON-website/>
 
 ![example results](./readme_resources/inputs_outputs.png)
 
-
-https://user-images.githubusercontent.com/21653654/174612222-91302de2-34f2-429c-b53e-f78f140873c4.mp4
-
-
 ## Usage
 
 ### Create environment
@@ -42,5 +38,6 @@ Once training is done, you will see the recovered mesh and materials under the f
 ```
 
 ## Example results
+https://user-images.githubusercontent.com/21653654/174612222-91302de2-34f2-429c-b53e-f78f140873c4.mp4
 
 ![example results](./readme_resources/assets_lowres.png)
