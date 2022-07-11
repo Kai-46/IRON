@@ -32,6 +32,10 @@ Once training is done, you will see the recovered mesh and materials under the f
 
 Check ```render_rgb_envmap_mat.py```.
 
+### Evaluation
+
+Check ```evaluation/eval_mesh.py``` and ```evaluation/eval_image_folder.py```.
+
 ## Citations
 
 ```
