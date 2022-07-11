@@ -38,7 +38,7 @@ Check ```evaluation/eval_mesh.py``` and ```evaluation/eval_image_folder.py```.
 
 ### Render synthetic data using Mitsuba
 
-Check ```test_mitsuba/render_rgb_flash_mat.py```.
+Check ```render_synthetic_data/render_rgb_flash_mat.py```.
 
 ### Camera parameters convention
 
