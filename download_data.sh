@@ -9,3 +9,7 @@ echo "Downloading real data captured by Luan et al 2021: Unified Shape and SVBRD
 echo "Please credit the original paper if you use this data"
 gdown 1BO6XZjUm8PhHof5RZ7O0Y3C815loBlqj
 unzip "Luan et al 2021.zip"
+
+echo "Downloading synthetic assets for creating synthetic data with Mitsuba"
+gdown 1EhDI06NsluXsC98ZErvB7UN_TPI1_6sn
+unzip "synthetic_assets.zip"
