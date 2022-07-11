@@ -68,9 +68,7 @@ parser.write_config_file(
         os.path.join(args.out_dir, "args.txt"),
     ],
 )
-os.makedirs(os.path.join(args.out_dir, "code"), exist_ok=True)
-shutil.copytree("./models", os.path.join(args.out_dir, "code/models"), dirs_exist_ok=True)
-shutil.copy2("./inverse_renderer.py", os.path.join(args.out_dir, "code/inverse_renderer.py"))
+
 
 ###### rendering functions
 def get_materials(color_network_dict, points, normals, features, is_metal=args.is_metal):
