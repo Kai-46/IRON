@@ -30,11 +30,19 @@ Once training is done, you will see the recovered mesh and materials under the f
 
 ### Relight the 3D assets using envmaps
 
-Check ```render_rgb_envmap_mat.py```.
+Check ```test_mitsuba/render_rgb_envmap_mat.py```.
 
 ### Evaluation
 
 Check ```evaluation/eval_mesh.py``` and ```evaluation/eval_image_folder.py```.
+
+### Render synthetic data using Mitsuba
+
+Check ```test_mitsuba/render_rgb_flash_mat.py```.
+
+### Camera parameters convention
+
+We use the OpenCV camera convention just like [NeRF++](https://github.com/Kai-46/nerfplusplus); you might want to use the camera visualization and debugging tools in that codebase to inspect if there's any issue with the camera parameters. Note we also assume the objects are inside the unit sphere.
 
 ## Citations
 
