@@ -38,7 +38,7 @@ Check ```evaluation/eval_mesh.py``` and ```evaluation/eval_image_folder.py```.
 
 ### Render synthetic data using Mitsuba
 
-Check ```render_synthetic_data/render_rgb_flash_mat.py```.
+Check ```render_synthetic_data/render_rgb_flash_mat.py```. To make renderings more shiny, try scaling up the specular albedo and scaling down the specular roughness; to make renderings more diffuse, try the opposite.
 
 ### Camera parameters convention
 
