@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 import json
 import imageio
+imageio.plugins.freeimage.download()
 from torch.utils.tensorboard import SummaryWriter
 import configargparse
 from icecream import ic
