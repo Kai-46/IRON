@@ -66,7 +66,7 @@ class GGXColocatedRenderer(nn.Module):
         ## compute shadowing term: https://github.com/mitsuba-renderer/mitsuba/blob/cfeb7766e7a1513492451f35dc65b86409655a7b/src/bsdfs/microfacet.h#L520
         G = smithG1(dot, alpha) ** 2  # [..., 1]
 
-        specular_rgb = light_intensity * specular_albedo * F * D * G / (4.0 * dot + 1e-10)
+        specular_rgb = light_intensity * specular_albedo * F * D * G / (4.0 * cosTheta2 + 1e-10)
 
         # diffuse term: https://github.com/mitsuba-renderer/mitsuba/blob/cfeb7766e7a1513492451f35dc65b86409655a7b/src/bsdfs/roughplastic.cpp#L367
         ## compute T12: : https://github.com/mitsuba-renderer/mitsuba/blob/cfeb7766e7a1513492451f35dc65b86409655a7b/src/bsdfs/rtrans.h#L183
